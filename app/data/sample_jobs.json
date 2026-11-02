@@ -1,0 +1,58 @@
+{
+  "Frontend Developer": [
+    ["JavaScript", "React", "HTML", "CSS", "TypeScript", "Git"],
+    ["JavaScript", "React", "Redux", "REST APIs", "Jest"],
+    ["TypeScript", "Next.js", "Tailwind CSS", "GraphQL", "Git"],
+    ["JavaScript", "Angular", "HTML", "CSS", "REST APIs"],
+    ["JavaScript", "Vue", "CSS", "Git", "Agile"]
+  ],
+  "Backend Developer": [
+    ["Python", "Django", "PostgreSQL", "REST APIs", "Docker"],
+    ["Java", "Spring Boot", "MySQL", "Microservices", "AWS"],
+    ["Node.js", "Express", "MongoDB", "REST APIs", "Git"],
+    ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker"],
+    ["Java", "Spring Boot", "Kafka", "Kubernetes", "SQL"]
+  ],
+  "Full Stack Developer": [
+    ["JavaScript", "React", "Node.js", "MongoDB", "Git"],
+    ["TypeScript", "React", "Node.js", "PostgreSQL", "AWS"],
+    ["JavaScript", "React", "Python", "Django", "SQL"],
+    ["Java", "Spring Boot", "Angular", "MySQL", "Docker"],
+    ["TypeScript", "Next.js", "PostgreSQL", "Docker", "REST APIs"]
+  ],
+  "Data Analyst": [
+    ["SQL", "Excel", "Power BI", "Data Analysis", "Statistics"],
+    ["SQL", "Python", "Pandas", "Tableau", "Data Visualization"],
+    ["SQL", "Excel", "Tableau", "Data Analysis"],
+    ["Python", "SQL", "Statistics", "A/B Testing", "Power BI"],
+    ["SQL", "Excel", "Data Visualization", "ETL"]
+  ],
+  "Data Scientist": [
+    ["Python", "Machine Learning", "SQL", "Statistics", "Pandas"],
+    ["Python", "Scikit-learn", "Deep Learning", "SQL", "NumPy"],
+    ["Python", "NLP", "PyTorch", "Machine Learning", "AWS"],
+    ["R", "Statistics", "SQL", "Machine Learning", "Data Visualization"],
+    ["Python", "TensorFlow", "Machine Learning", "Apache Spark", "SQL"]
+  ],
+  "Machine Learning Engineer": [
+    ["Python", "PyTorch", "Machine Learning", "Docker", "AWS"],
+    ["Python", "TensorFlow", "Deep Learning", "Kubernetes", "MLOps"],
+    ["Python", "Generative AI", "Hugging Face", "Docker", "Git"],
+    ["Python", "Scikit-learn", "SQL", "Airflow", "MLOps"],
+    ["Python", "PyTorch", "NLP", "Generative AI", "GCP"]
+  ],
+  "DevOps Engineer": [
+    ["AWS", "Docker", "Kubernetes", "Terraform", "CI/CD", "Linux"],
+    ["Azure", "Docker", "Jenkins", "Bash", "Linux"],
+    ["AWS", "Terraform", "Ansible", "Python", "CI/CD"],
+    ["GCP", "Kubernetes", "Prometheus", "Grafana", "Linux"],
+    ["AWS", "GitHub Actions", "Docker", "Bash", "Nginx"]
+  ],
+  "Mobile Developer": [
+    ["Flutter", "Dart", "Firebase", "REST APIs", "Git"],
+    ["React Native", "JavaScript", "TypeScript", "REST APIs", "Git"],
+    ["Android", "Kotlin", "REST APIs", "Firebase", "Git"],
+    ["iOS", "Swift", "REST APIs", "Git"],
+    ["Flutter", "Dart", "Android", "iOS", "Firebase"]
+  ]
+}
