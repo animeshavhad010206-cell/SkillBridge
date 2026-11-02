@@ -1,0 +1,198 @@
+@import 'tailwindcss';
+@import '@fontsource/space-grotesk/500.css';
+@import '@fontsource/space-grotesk/700.css';
+@import '@fontsource/space-mono/400.css';
+@import '@fontsource/space-mono/700.css';
+
+@theme {
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: light;
+  color: #000;
+  background: #fff;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  --hatch: repeating-linear-gradient(45deg, #000 0 3px, #fff 3px 8px);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 3px;
+}
+
+@layer components {
+  .card {
+    border: 3px solid #000;
+    background: #fff;
+    box-shadow: 6px 6px 0 #000;
+    padding: 1.5rem;
+  }
+
+  .card-inverse {
+    border: 3px solid #000;
+    background: #000;
+    color: #fff;
+    box-shadow: 6px 6px 0 #000;
+    padding: 1.5rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 3px solid #000;
+    background: #000;
+    color: #fff;
+    padding: 0.625rem 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #000;
+    transition: transform 80ms, box-shadow 80ms, background 80ms, color 80ms;
+  }
+
+  .btn:hover:not(:disabled) {
+    background: #fff;
+    color: #000;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #000;
+  }
+
+  .btn:active:not(:disabled) {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 #000;
+  }
+
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+    box-shadow: none;
+  }
+
+  .btn-secondary {
+    background: #fff;
+    color: #000;
+  }
+
+  .btn-secondary:hover:not(:disabled) {
+    background: #000;
+    color: #fff;
+  }
+
+  .btn-small {
+    padding: 0.25rem 0.625rem;
+    font-size: 0.8125rem;
+    box-shadow: 3px 3px 0 #000;
+  }
+
+  .input {
+    width: 100%;
+    border: 3px solid #000;
+    background: #fff;
+    padding: 0.625rem 0.75rem;
+    font: inherit;
+  }
+
+  .input:focus {
+    outline: none;
+    box-shadow: 4px 4px 0 #000;
+  }
+
+  .link {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
+  .link:hover {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    border: 2px solid #000;
+    padding: 0 0.4375rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+  }
+
+  .chip-solid {
+    background: #000;
+    color: #fff;
+  }
+
+  .chip-dashed {
+    border-style: dashed;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+
+  .table th {
+    background: #000;
+    color: #fff;
+    padding: 0.625rem 0.75rem;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .table td {
+    border-bottom: 2px solid #000;
+    padding: 0.625rem 0.75rem;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 480px) {
+    .table th,
+    .table td {
+      padding-inline: 0.5rem;
+    }
+  }
+
+  .table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .hatch {
+    background: var(--hatch);
+  }
+}
